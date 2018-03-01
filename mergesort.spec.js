@@ -15,6 +15,12 @@ describe('Merge Sort', function(){
 
   describe('Merge function', function(){
     it('is able to merge two sorted arrays into one sorted array', function(){
-      expect(merge([1], [2], [3], [4], [6,8])).toEqual([1,2,3,4,6,8]);
+      expect(merge([1,4,7],[2,3,9])).toEqual([1,2,3,4,7,9]);
     });
   });
+
+  describe('MergeSort function', function(){
+    it("it is able to sort", function(){
+      expect(mergeSort([3,2,1])).toEqual([1,2,3])
+    });
+  })
